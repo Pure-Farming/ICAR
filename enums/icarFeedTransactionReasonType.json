@@ -8,6 +8,8 @@
         "TransferOut",
         "Discarded",
         "Wasted",
-        "Adjusted"
+        "Adjusted",
+        "Grown",
+        "Used"
     ]
 }
