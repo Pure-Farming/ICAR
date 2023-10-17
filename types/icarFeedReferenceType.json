@@ -4,7 +4,7 @@
     "$id": "types/icarFeedReferenceType",
     "allOf": [
         {
-            "$ref": "../types/icarResourceReferenceType.json"
+            "$ref": "../types/icarProductReferenceType.json"
         }
     ],
     "properties": {
