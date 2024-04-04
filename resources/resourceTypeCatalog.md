@@ -2,7 +2,7 @@
 
 This document defines a set of URI identifiers and string short codes and maps them to ICAR resource types. 
 
-The catalog is represented as a table with the columns, shortname, URI, `resourceType` discriminator link to resource resource type in github.
+The catalog is represented as a table with the columns, shortname, `resourceType` discriminator, URI, and name of the resource schema file.
 
 To help with readability and conciseness the URIs are represnted as CURIs (concise URIs) where the prefix is:
 
@@ -13,68 +13,71 @@ and the expansion is:
 `http://data.adewg.icar.org/core/`
 
 
-Short Name             | URI                         | Discriminator (resourceType) | JSON Resource Type Definition
----                    | ---                         | --- | ---
-Animal                 | icar:Animal                 | icarAnimalCoreResource | icarAnimalCoreResource.json
-AnimalSetJoinEvent     | icar:AnimalSetJoinEvent     | icarAnimalSetJoinEventResource | icarAnimalSetJoinEventResource.json
-AnimalSetLeaveEvent    | icar:AnimalSetLeaveEvent    | icarAnimalSetLeaveEventResource | icarAnimalSetLeaveEventResource.json
-AnimalSet              | icar:AnimalSet              | icarAnimalSetResource | icarAnimalSetResource.json
-BreedingValue          | icar:BreedingValue          | icarBreedingValueResource | icarBreedingValueResource.json
-CarcassObservationsEvent  | icar:CarcassObservations    | icarCarcassObservationsEventResource | icarCarcassObservationsEventResource.json
-Carcass                | icar:Carcass                | icarCarcassResource | icarCarcassResource.json
-ConformationScoreEvent | icar:ConformationScoreEvent | icarConformationScoreEventResource | icarConformationScoreEventResource.json
-DailyMilkingAverages   | icar:DailyMilkingAverages   | icarDailyMilkingAveragesResource | icarDailyMilkingAveragesResource.json
-Device                 | icar:Device                 | icarDeviceResource | icarDeviceResource.json
-DiagnosisEvent         | icar:DiagnosisEvent         | icarDiagnosisEventResource | icarDiagnosisEventResource.json
-FeedIntakeEvent        | icar:FeedIntakeEvent        | icarFeedIntakeEventResource | icarFeedIntakeEventResource.json
-FeedRecommendation     | icar:FeedRecommendation     | icarFeedRecommendationResource | icarFeedRecommendationResource.json
-FeedReport             | icar:FeedReport             | icarFeedReportResource | icarFeedReportResource.json
-Feed                   | icar:Feed                   | icarFeedResource | icarFeedResource.json
-FeedStorage            | icar:FeedStorage            | icarFeedStorageResource | icarFeedStorageResource.json
-Gestation              | icar:Gestation              | icarGestationResource | icarGestationResource.json
-GroupFeedingEvent      | icar:GroupFeedingEvent      | icarGroupFeedingEventResource | icarGroupFeedingEventResource.json
-GroupMovementArrivalEvent | icar:GroupMovementArrivalEvent | icarGroupMovementArrivalEventResource | icarGroupMovementArrivalEventResource.json
-GroupMovementBirthEvent | icar:GroupMovementBirthEvent | icarGroupMovementBirthEventResource | icarGroupMovementBirthEventResource.json
-GroupMovementDeathEvent | icar:GroupMovementDeathEvent | icarGroupMovementDeathEventResource | icarGroupMovementDeathEventResource.json
-GroupMovementDepartureEvent | icar:GroupMovementDepartureEvent | icarGroupMovementDepartureEventResource | icarGroupMovementDepartureEventResource.json
-GroupTreatmentEvent    | icar:GroupTreatmentEvent    | icarGroupTreatmentEventResource | icarGroupTreatmentEventResource.json
-GroupWeightEvent       | icar:GroupWeightEvent       | icarGroupWeightEventResource | icarGroupWeightEventResource.json
-HealthStatusObservedEvent | icar:HealthStatusObservedEvent | icarHealthStatusObservedEventResource | icarHealthStatusObservedEventResource.json
-InventoryTransaction   | icar:InventoryTransaction   | icarInventoryTransactionResource | icarInventoryTransactionResource.json
-Lactation              | icar:Lactation              | icarLactationResource| icarLactationResource.json
-LactationStatusObservedEvent     | icar:LactationStatusObservedEvent     | icarLactationStatusObservedEventResource | icarLactationStatusObservedEventResource.json
-Location               | icar:Location               | icarLocationResource | icarLocationResource.json
-Medicine               | icar:Medicine               | icarMedicineResource | icarMedicineResource.json
-MedicineTransaction    | icar:MedicineTransaction    | icarMedicineTransactionResource | icarMedicineTransactionResource.json
-MilkPrediction         | icar:MilkPrediction         | icarMilkPredictionResource | icarMilkPredictionResource.json
-MilkingDryOffEvent     | icar:MilkingDryOffEvent     | icarMilkingDryOffEventResource | icarMilkingDryOffEventResource.json
-MilkingVisitEvent      | icar:MilkingVisitEvent      | icarMilkingVisitEventResource | icarMilkingVisitEventResource.json
-MovementArrivalEvent   | icar:MovementArrivalEvent   | icarMovementArrivalEventResource | icarMovementArrivalEventResource.json
-MovementBirthEvent     | icar:MovementBirthEvent     | icarMovementBirthEventResource | icarMovementBirthEventResource.json
-MovementDeathEvent     | icar:MovementDeathEvent     | icarMovementDeathEventResource | icarMovementDeathEventResource.json
-MovementDepartureEvent | icar:MovementDepartureEvent | icarMovementDepartureEventResource| icarMovementDepartureEventResource.json
-ProcessingLot          | icar:ProcessingLot          | icarProcessingLotResource | icarProcessingLotResource.json
-ProgenyDetails         | icar:ProgenyDetails         | icarProgenyDetailsResource | icarProgenyDetailsResource.json
-Ration                 | icar:Ration                 | icarRationResource | icarRationResource.json
-ReproAbortionEvent     | icar:ReproAbortionEvent     | icarReproAbortionEventResource | icarReproAbortionEventResource.json
-ReproDoNotBreedEvent   | icar:ReproDoNotBreedEvent   | icarReproDoNotBreedEventResource | icarReproDoNotBreedEventResource.json
-ReproEmbryoFlushingEvent | icar:ReproEmbryoFlushingEvent | icarReproEmbryoFlushingEventResource | icarReproEmbryoFlushingEventResource.json
-ReproEmbryo            | icar:ReproEmbryo            | icarReproEmbryoResource | icarReproEmbryoResource.json
-ReproHeatEvent         | icar:ReproHeatEvent         | icarReproHeatEventResource | icarReproHeatEventResource.json
-ReproInseminationEvent | icar:ReproInsemonationEvent | icarReproInsemonationEventResource | icarReproInsemonationEventResource.json
-ReproMatingRecommendation | icar:ReproMatingRecommendation | icarReproMatingRecommendationResource | icarReproMatingRecommendationResource.json
-ReproParturitionEvent  | icar:ReproParturitionEvent  | icarReproParturitionEventResource | icarReproParturitionEventResource.json
-ReproPregnancyCheckEvent | icar:ReproPregnancyCheckEvent | icarReproPregnancyCheckEventResource | icarReproPregnancyCheckEventResource.json
-ReproSemenStraw        | icar:ReproSemenStraw        | icarReproSemenStrawResource | icarReproSemenStrawResource.json
-ReproStatusObservedEvent | icar:ReproStatusObservedEvent | icarReproStatusObservedEventResource | icarReproStatusObservedEventResource.json
-SchemeType             | icar:SchemeType | icarSchemeTypeResource | icarSchemeTypeResource.json
-SchemeValue            | icar:SchemeValue | icarSchemeValueResource | icarSchemeValueResource.json
-Statistics             | icar:Statistics             | icarStatisticsResource | icarStatisticsResource.json
-TestDay                | icar:TestDay                | icarTestDayResource | icarTestDayResource.json
-TestDayResult          | icar:TestDayResult          | icarTestDayResultResource | icarTestDayResultResource.json
-TreatmentEvent         | icar:TreatmentEvent         | icarTreatmentEventResource | icarTreatmentEventResource.json
-TreatmentProgramEvent  | icar:TreatmentProgramEvent  | icarTreatmentProgramEventResource | icarTreatmentProgramEventResource.json
-WeightEvent            | icar:WeightEvent            | icarWeightEventResource| icarWeightEventResource.json
-WithdrawalEvent        | icar:WithdrawalEvent        | icarWithdrawalEventResource | icarWithdrawalEventResource.json
+Short Name             | Discriminator (resourceType) | URI (future use)   | JSON Resource Type Definition
+--- | --- | --- | ---
+Animal | **icarAnimalCoreResource** | icar:Animal | icarAnimalCoreResource.json
+AnimalSetJoinEvent | **icarAnimalSetJoinEventResource** | icar:AnimalSetJoinEvent     | icarAnimalSetJoinEventResource.json
+AnimalSetLeaveEvent | **icarAnimalSetLeaveEventResource** | icar:AnimalSetLeaveEvent | icarAnimalSetLeaveEventResource.json
+AnimalSet | **icarAnimalSetResource** | icar:AnimalSet | icarAnimalSetResource.json
+AttentionEvent  | **icarAttentionEventResource** | icar:AttentionEvent | icarAttentionEventResource.json 
+BreedingValue | **icarBreedingValueResource** | icar:BreedingValue | icarBreedingValueResource.json
+CarcassObservationsEvent | **icarCarcassObservationsEventResource** | icar:CarcassObservations | icarCarcassObservationsEventResource.json
+Carcass | **icarCarcassResource** | icar:Carcass | icarCarcassResource.json
+ConformationScoreEvent | **icarConformationScoreEventResource** | icar:ConformationScoreEvent | icarConformationScoreEventResource.json
+DailyMilkingAverages | **icarDailyMilkingAveragesResource** | icar:DailyMilkingAverages | icarDailyMilkingAveragesResource.json
+Device | **icarDeviceResource** | icar:Device | icarDeviceResource.json
+DiagnosisEvent | **icarDiagnosisEventResource** | icar:DiagnosisEvent | icarDiagnosisEventResource.json
+FeedIntakeEvent | **icarFeedIntakeEventResource** | icar:FeedIntakeEvent | icarFeedIntakeEventResource.json
+FeedRecommendation | **icarFeedRecommendationResource** | icar:FeedRecommendation | icarFeedRecommendationResource.json
+FeedReport | **icarFeedReportResource** | icar:FeedReport | icarFeedReportResource.json
+Feed | **icarFeedResource** | icar:Feed | icarFeedResource.json
+FeedStorage | **icarFeedStorageResource** | icar:FeedStorage | icarFeedStorageResource.json
+FeedTransaction | **icarFeedTransactionResource** | icar:FeedTransaction | icarFeedTransactionResource.json
+Gestation | **icarGestationResource** | icar:Gestation | icarGestationResource.json
+GroupFeedingEvent | **icarGroupFeedingEventResource** | icar:GroupFeedingEvent | icarGroupFeedingEventResource.json
+GroupMovementArrivalEvent | **icarGroupMovementArrivalEventResource**| icar:GroupMovementArrivalEvent | icarGroupMovementArrivalEventResource.json
+GroupMovementBirthEvent | **icarGroupMovementBirthEventResource** | icar:GroupMovementBirthEvent | icarGroupMovementBirthEventResource.json
+GroupMovementDeathEvent | **icarGroupMovementDeathEventResource** | icar:GroupMovementDeathEvent | icarGroupMovementDeathEventResource.json
+GroupMovementDepartureEvent | **icarGroupMovementDepartureEventResource** | icar:GroupMovementDepartureEvent | icarGroupMovementDepartureEventResource.json
+GroupTreatmentEvent | **icarGroupTreatmentEventResource** | icar:GroupTreatmentEvent | icarGroupTreatmentEventResource.json
+GroupWeightEvent | **icarGroupWeightEventResource** | icar:GroupWeightEvent | icarGroupWeightEventResource.json
+HealthStatusObservedEvent | **icarHealthStatusObservedEventResource** | icar:HealthStatusObservedEvent | icarHealthStatusObservedEventResource.json
+InventoryTransaction | **icarInventoryTransactionResource** | icar:InventoryTransaction | icarInventoryTransactionResource.json
+Lactation | **icarLactationResource** | icar:Lactation | icarLactationResource.json
+LactationStatusObservedEvent | **icarLactationStatusObservedEventResource** | icar:LactationStatusObservedEvent | icarLactationStatusObservedEventResource.json
+Location | **icarLocationResource** | icar:Location | icarLocationResource.json
+Medicine | **icarMedicineResource** | icar:Medicine | icarMedicineResource.json
+MedicineTransaction | **icarMedicineTransactionResource** | icar:MedicineTransaction | icarMedicineTransactionResource.json
+MilkingDryOffEvent | **icarMilkingDryOffEventResource** | icar:MilkingDryOffEvent | icarMilkingDryOffEventResource.json
+MilkingVisitEvent | **icarMilkingVisitEventResource** | icar:MilkingVisitEvent | icarMilkingVisitEventResource.json
+MilkPrediction | **icarMilkPredictionResource** | icar:MilkPrediction | icarMilkPredictionResource.json
+MovementArrivalEvent | **icarMovementArrivalEventResource** | icar:MovementArrivalEvent | icarMovementArrivalEventResource.json
+MovementBirthEvent | **icarMovementBirthEventResource** | icar:MovementBirthEvent | icarMovementBirthEventResource.json
+MovementDeathEvent | **icarMovementDeathEventResource** | icar:MovementDeathEvent | icarMovementDeathEventResource.json
+MovementDepartureEvent | **icarMovementDepartureEventResource** | icar:MovementDepartureEvent | icarMovementDepartureEventResource.json
+ProcessingLot | **icarProcessingLotResource** | icar:ProcessingLot | icarProcessingLotResource.json
+ProgenyDetails | **icarProgenyDetailsResource** | icar:ProgenyDetails | icarProgenyDetailsResource.json
+Ration | **icarRationResource** | icar:Ration | icarRationResource.json
+ReproAbortionEvent | **icarReproAbortionEventResource** | icar:ReproAbortionEvent | icarReproAbortionEventResource.json
+ReproDoNotBreedEvent | **icarReproDoNotBreedEventResource** | icar:ReproDoNotBreedEvent | icarReproDoNotBreedEventResource.json
+ReproEmbryoFlushingEvent | **icarReproEmbryoFlushingEventResource** | icar:ReproEmbryoFlushingEvent | icarReproEmbryoFlushingEventResource.json
+ReproEmbryo | **icarReproEmbryoResource** | icar:ReproEmbryo | icarReproEmbryoResource.json
+ReproHeatEvent | **icarReproHeatEventResource** | icar:ReproHeatEvent | icarReproHeatEventResource.json
+ReproInseminationEvent | **icarReproInsemonationEventResource** | icar:ReproInsemonationEvent | icarReproInsemonationEventResource.json
+ReproMatingRecommendation | **icarReproMatingRecommendationResource** | icar:ReproMatingRecommendation | icarReproMatingRecommendationResource.json
+ReproParturitionEvent | **icarReproParturitionEventResource** | icar:ReproParturitionEvent | icarReproParturitionEventResource.json
+ReproPregnancyCheckEvent | **icarReproPregnancyCheckEventResource** | icar:ReproPregnancyCheckEvent | icarReproPregnancyCheckEventResource.json
+ReproSemenStraw | **icarReproSemenStrawResource** | icar:ReproSemenStraw | icarReproSemenStrawResource.json
+ReproStatusObservedEvent | **icarReproStatusObservedEventResource** | icar:ReproStatusObservedEvent | icarReproStatusObservedEventResource.json
+SchemeType | **icarSchemeTypeResource** | icar:SchemeType | icarSchemeTypeResource.json
+SchemeValue | **icarSchemeValueResource** | icar:SchemeValue | icarSchemeValueResource.json
+Statistics | **icarStatisticsResource** | icar:Statistics | icarStatisticsResource.json
+TestDay | **icarTestDayResource** | icar:TestDay | icarTestDayResource.json
+TestDayResult | **icarTestDayResultResource** | icar:TestDayResult | icarTestDayResultResource.json
+TreatmentEvent | **icarTreatmentEventResource** | icar:TreatmentEvent | icarTreatmentEventResource.json
+TreatmentProgramEvent | **icarTreatmentProgramEventResource** | icar:TreatmentProgramEvent | icarTreatmentProgramEventResource.json
+TypeClassificationEvent | **icarTypeClassificationEventResource** | icar:TypeClassificationEvent | icarTypeClassificationEventResource.json
+WeightEvent | **icarWeightEventResource** | icar:WeightEvent | icarWeightEventResource.json
+WithdrawalEvent | **icarWithdrawalEventResource** | icar:WithdrawalEvent | icarWithdrawalEventResource.json
 
 
