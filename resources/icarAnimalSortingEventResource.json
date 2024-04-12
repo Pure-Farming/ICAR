@@ -1,0 +1,30 @@
+{
+  "description": "Sorting data for a specific animal on a location.",
+  "allOf": [
+    {
+      "$ref": "../resources/icarResource.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "animalId",
+        "areaId"
+      ],
+      "properties": {
+        "animalId": {
+          "$ref": "../types/icarAnimalIdentifierType.json",
+          "description": "Unique animal scheme and identifier combination."
+        },
+        "areaId": {
+          "type": "string",
+          "description": "Unique identifier in the sorting system for this resource."
+        },
+        "isPermanent": {
+          "type": "boolean",
+          "default": false,
+          "description": "Indicates, if this sorting should be a permanent- or a one-time-sorting"
+        }
+      }
+    }
+  ]
+}

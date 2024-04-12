@@ -1,0 +1,20 @@
+{
+  "description": "Sorting data for a specific animal on a location.",
+  "allOf": [
+    {
+      "$ref": "../gea-resources/icarAnimalSortingEventResource.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "startDateTime"
+      ],
+      "properties": {
+        "startDateTime": {
+          "$ref": "../types/icarDateTimeType.json",
+          "description": "The RFC3339 UTC date time of the start of sorting (see https://ijmacd.github.io/rfc3339-iso8601/ for format guidance)."
+        }
+      }
+    }
+  ]
+}
