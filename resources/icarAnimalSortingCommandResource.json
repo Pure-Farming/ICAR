@@ -1,0 +1,34 @@
+{
+  "description": "Sorting data for a specific animal on a location.",
+  "allOf": [
+    {
+      "$ref": "../resources/icarResource.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "animalId",
+        "siteId",
+        "validFrom"
+      ],
+      "properties": {
+        "animalId": {
+          "$ref": "../types/icarAnimalIdentifierType.json",
+          "description": "Unique animal scheme and identifier combination."
+        },
+        "siteId": {
+          "type": "string",
+          "description": "Unique identifier in the system for this site."
+        },
+        "validFrom": {
+          "$ref": "../types/icarDateTimeType.json",
+          "description": "Specifies from when the sort command should be active. RFC3339 UTC date time (see https://ijmacd.github.io/rfc3339-iso8601/ for format guidance)."
+        },
+        "validTo": {
+          "$ref": "../types/icarDateTimeType.json",
+          "description": "Specifies until when the sort command should be active. Could be left empty, when the sorting should be permanent. RFC3339 UTC date time (see https://ijmacd.github.io/rfc3339-iso8601/ for format guidance)."
+        }
+      }
+    }
+  ]
+}

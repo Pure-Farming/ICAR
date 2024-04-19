@@ -22,11 +22,11 @@
     }
   ],
   "paths": {
-    "/locations/{location-scheme}/{location-id}/sorting-areas": {
+    "/locations/{location-scheme}/{location-id}/sorting-sites": {
       "get": {
-        "operationId": "get-sorting-areas",
-        "summary": "Get the sorting-areas for a certain location",
-        "description": "# Purpose\nProvides the sorting-areas for a location\n",
+        "operationId": "get-sorting-sites",
+        "summary": "Get the sorting-sites for a certain location",
+        "description": "# Purpose\nProvides the sorting-sites for a location\n",
         "tags": [
           "ADE-1.3-sorting"
         ],
@@ -44,7 +44,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/icarSortingAreaCollection"
+                  "$ref": "#/components/schemas/icarSortingSiteCollection"
                 }
               }
             }
@@ -58,7 +58,7 @@
     "/locations/{location-scheme}/{location-id}/{animal-scheme}/{animal-id}/sorting": {
       "get": {
         "operationId": "get-sorting of an animal",
-        "summary": "Get the sorting of a certain animal for a certain location",
+        "summary": "Get the sorting of a certain animal for a certain site",
         "description": "# Purpose\nProvides the sorting of a certain animal\n",
         "tags": [
           "ADE-1.3-sorting"
@@ -83,7 +83,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/icarAnimalSortingResource"
+                  "$ref": "#/components/schemas/icarAnimalSortingCommandResource"
                 }
               }
             }
@@ -116,7 +116,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful. The response contains the sorting for the given location and given animal id."
+            "description": "Successful."
           },
           "default": {
             "$ref": "#/components/responses/default"
@@ -127,8 +127,8 @@
     "/locations/{location-scheme}/{location-id}/sorting": {
       "post": {
         "operationId": "post-animal-sorting",
-        "summary": "Add an animal into a sorting-area.",
-        "description": "# Purpose\nAllows a client to add an animal to a sorting-area\n",
+        "summary": "Add an animal into a sorting-site.",
+        "description": "# Purpose\nAllows a client to add an animal to a sorting-site",
         "tags": [
           "ADE-1.3-sorting"
         ],
@@ -146,7 +146,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/icarAnimalSortingEventResource"
+                "$ref": "#/components/schemas/icarAnimalSortingCommandResource"
               }
             }
           }
@@ -157,7 +157,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/icarAnimalSortingResource"
+                  "$ref": "#/components/schemas/icarAnimalSortingCommandResource"
                 }
               }
             }
@@ -198,14 +198,11 @@
   },
   "components": {
     "schemas": {
-      "icarSortingAreaCollection": {
-        "$ref": "../collections/icarSortingAreaCollection.json"
+      "icarSortingSiteCollection": {
+        "$ref": "../collections/icarSortingSiteCollection.json"
       },
-      "icarAnimalSortingResource": {
-        "$ref": "../resources/icarAnimalSortingResource.json"
-      },
-      "icarAnimalSortingEventResource": {
-        "$ref": "../resources/icarAnimalSortingEventResource.json"
+      "icarAnimalSortingCommandResource": {
+        "$ref": "../resources/icarAnimalSortingCommandResource.json"
       }
     },
     "parameters": {

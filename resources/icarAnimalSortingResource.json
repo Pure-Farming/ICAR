@@ -2,7 +2,7 @@
   "description": "Sorting data for a specific animal on a location.",
   "allOf": [
     {
-      "$ref": "../gea-resources/icarAnimalSortingEventResource.json"
+      "$ref": "../resources/icarAnimalSortingCommandResource.json"
     },
     {
       "type": "object",

@@ -1,5 +1,5 @@
 {
-  "description": "Areas available on a location.",
+  "description": "Site available on a location.",
   "allOf": [
     {
       "$ref": "../resources/icarResource.json"
@@ -13,16 +13,16 @@
       "properties": {
         "id": {
           "type": "string",
-          "description": "Unique identifier in the area system for this resource."
+          "description": "Unique identifier in the system for this site."
         },
         "name": {
           "type": "string",
-          "description": "Name of the area as it is known on the location."
+          "description": "Name of the site as it is known on the location."
         },
         "capacity": {
           "type": "number",
           "default": 0,
-          "description": "The maximum capacity of this area.",
+          "description": "The maximum capacity of this site.",
           "format": "int32"
         }
       }
