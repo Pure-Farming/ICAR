@@ -124,7 +124,38 @@
         }
       }
     },
-    "/locations/{location-scheme}/{location-id}/sorting": {
+    "/locations/{location-scheme}/{location-id}/sortings": {
+      "get": {
+        "operationId": "get-all-animal-sorting-commands",
+        "summary": "Get the known sorting-commands for all animals of a certain location",
+        "description": "# Purpose\nProvides the known sorting-commands for all animals of a location\n",
+        "tags": [
+          "ADE-1.3-sorting"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/location-scheme"
+          },
+          {
+            "$ref": "#/components/parameters/location-id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful. The response contains the resources for the given location.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/icarAnimalSortingCommandCollection"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/default"
+          }
+        }
+      },
       "post": {
         "operationId": "post-animal-sorting",
         "summary": "Add an animal into a sorting-site.",
@@ -198,6 +229,9 @@
   },
   "components": {
     "schemas": {
+      "icarAnimalSortingCommandCollection": {
+        "$ref": "../collections/icarAnimalSortingCommandCollection.json"
+      },
       "icarSortingSiteCollection": {
         "$ref": "../collections/icarSortingSiteCollection.json"
       },
