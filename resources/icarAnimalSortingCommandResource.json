@@ -7,16 +7,16 @@
     {
       "type": "object",
       "required": [
-        "animalId",
-        "siteId",
+        "animal",
+        "site",
         "validFrom"
       ],
       "properties": {
-        "animalId": {
+        "animal": {
           "$ref": "../types/icarAnimalIdentifierType.json",
           "description": "Unique animal scheme and identifier combination."
         },
-        "siteId": {
+        "site": {
           "type": "string",
           "description": "Unique identifier in the system for this site."
         },
