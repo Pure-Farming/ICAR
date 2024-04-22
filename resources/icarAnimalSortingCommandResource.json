@@ -26,7 +26,7 @@
         },
         "validTo": {
           "$ref": "../types/icarDateTimeType.json",
-          "description": "Specifies until when the sort command should be active. Could be left empty, when the sorting should be permanent. RFC3339 UTC date time (see https://ijmacd.github.io/rfc3339-iso8601/ for format guidance)."
+          "description": "Specifies until when the sort command should be active. Could be left empty, when the sorting should be ongoing (until replaced). RFC3339 UTC date time (see https://ijmacd.github.io/rfc3339-iso8601/ for format guidance)."
         }
       }
     }
