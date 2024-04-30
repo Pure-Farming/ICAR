@@ -8,6 +8,10 @@
       "type": "string",
       "description": "The name of a location, such as a barn, pen, building, or field."
     },
+    "site": {
+      "type": "string",
+      "description": "Identifier for a sorting site (icarSortingSiteResource) for this position."
+    },
     "geometry": {
       "$ref": "https://geojson.org/schema/Geometry.json",
       "description": "A GeoJSON geometry (such as a latitude/longitude point) that specifies the position."
