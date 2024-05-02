@@ -15,8 +15,7 @@
     },
     "@type": {
       "type": "string",
-      "description": "Deprecated - use reltype. Specifies whether this is a single resource Link or a Collection.",
-      "enum": ["Link"]
+      "description": "Deprecated - use reltype. Specifies whether this is a single resource Link or a Collection."
     },
     "identifier": {
       "$ref": "../types/icarIdentifierType.json",
