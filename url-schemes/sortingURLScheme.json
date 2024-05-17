@@ -1,5 +1,5 @@
 {
-  "openapi": "3.0.1",
+  "openapi": "3.1.0",
   "info": {
     "title": "Sorting-related messages API Specifications",
     "description": "Specifications for messages that support livestock sorting management.",
@@ -57,7 +57,7 @@
     },
     "/locations/{location-scheme}/{location-id}/{animal-scheme}/{animal-id}/sorting": {
       "get": {
-        "operationId": "get-sorting of an animal",
+        "operationId": "get-animal-sorting",
         "summary": "Get the sorting of a certain animal for a certain site",
         "description": "# Purpose\nProvides the sorting of a certain animal\n",
         "tags": [
@@ -289,6 +289,6 @@
         }
       }
     },
-    "examples": {}
+"examples": {}
   }
 }
