@@ -2536,7 +2536,7 @@
           "summary": "Get position observation events for animals that relate to a given location",
           "description": "# Purpose\nProvides the collection of position observation events for animals at the specified location.\n",
           "tags": [
-              "ADE-1.3-management"
+              "ADE-1.4-management"
           ],
           "parameters": [
               {
@@ -2587,7 +2587,7 @@
           "summary": "Get position observation events for groups that relate to a given location",
           "description": "# Purpose\nProvides the collection of position observation events for groups at the specified location.\n",
           "tags": [
-              "ADE-1.3-management"
+              "ADE-1.4-management"
           ],
           "parameters": [
               {
