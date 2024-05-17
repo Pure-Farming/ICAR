@@ -49,6 +49,14 @@
           "type": "string",
           "description": "The ID of the device where the measurement of the milking took place"
         },
+        "milkingShiftLocalStartDate": {
+          "$ref": "../types/icarDateTimeType.json",
+          "description": "The ISO8601 date in local time zone to which this milking shift belongs. A time component is not expected or required."
+        },
+        "milkingShiftNumber": {
+          "type": "integer",
+          "description": "For milkings supervised by humans, this number represents the shift within a local date in which this milking visit occurred." 
+        },
         "quarterMilkings": {
           "type": "array",
           "items": {
