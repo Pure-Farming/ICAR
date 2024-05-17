@@ -29,6 +29,12 @@
       "Standing",
       "StandingUp",
       "Walking",
+      "Heat",
+      "LowBattery",
+      "Offline",
+      "UnderWeight",
+      "OverWeight",
+      "AtTargetWeight",
       "Other",
       "Undefined"
     ]
