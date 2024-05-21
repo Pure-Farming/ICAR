@@ -1,5 +1,5 @@
 {
-  "description": "Gestation information of animals on a specific location.",
+  "description": "This resource holds computed or predicted gestation information for animals at a location.\n- Use this resource to understand potential sire and expected calving date.\n- This resource should be recomputed when a heat, repro-status observation, or pregnancy check event is recorded.",
 
   "allOf": [{
       "$ref": "icarResource.json"
@@ -16,7 +16,7 @@
       "properties": {
         "id": {
           "type": "string",
-          "description": "Unique identifier in the source system for this event."
+          "description": "Unique identifier in the source system for this computed resource."
         },
         "animal": {
           "$ref": "../types/icarAnimalIdentifierType.json",
