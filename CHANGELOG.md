@@ -1,8 +1,59 @@
 # Changelog
 
-## [v1.3.2](https://github.com/adewg/ICAR/tree/HEAD) (2023-02-15)
+## [v1.4.0](https://github.com/adewg/ICAR/tree/v1.4.0) (2024-05-21)
 
-[Full Changelog](https://github.com/adewg/ICAR/compare/v1.3.1...HEAD)
+[Full Changelog](https://github.com/adewg/ICAR/compare/v1.3.2...v1.4.0)
+
+**Closed issues:**
+
+- Improve descriptions in icarGestationResource [\#463](https://github.com/adewg/ICAR/issues/463)
+- Expand icarAttentionCategoryType.json and icarAttentionCauseType.json to include more types [\#462](https://github.com/adewg/ICAR/issues/462)
+- Add Animal property to AttentionEventResource [\#461](https://github.com/adewg/ICAR/issues/461)
+- Add missing property "EventDateTime" in resource "icarGestationResource" [\#459](https://github.com/adewg/ICAR/issues/459)
+- Add support for feeding costs and feed refusal [\#458](https://github.com/adewg/ICAR/issues/458)
+- Sorting of animals [\#456](https://github.com/adewg/ICAR/issues/456)
+- Remove "enum" attribute from deprecated "@type" property of icarResourceType [\#451](https://github.com/adewg/ICAR/issues/451)
+- Add support for milking shifts or batch milking to icarMilkingVisitEventResource [\#450](https://github.com/adewg/ICAR/issues/450)
+- Remaining items to be addressed for ADE 1.4 release [\#443](https://github.com/adewg/ICAR/issues/443)
+- Update icarResourceTypeCatalog.md [\#440](https://github.com/adewg/ICAR/issues/440)
+- icarDeviceResource is not correctly structured [\#439](https://github.com/adewg/ICAR/issues/439)
+- Add Certified Milk Weight and Total Milk Weight to Milking Visit [\#436](https://github.com/adewg/ICAR/issues/436)
+- Second ManagementTag in IcarAnimalCoreResource [\#435](https://github.com/adewg/ICAR/issues/435)
+- IcarMovementArrivalEventResource: additional information about former events [\#432](https://github.com/adewg/ICAR/issues/432)
+- Add Discriminator to resourceTypeCatalog.md [\#426](https://github.com/adewg/ICAR/issues/426)
+- Extend feed inventory transactions to allow feeds to be manufactured or harvested on farm [\#422](https://github.com/adewg/ICAR/issues/422)
+- Add \(ICAR\) certification identifier for devices [\#412](https://github.com/adewg/ICAR/issues/412)
+- Improve device references in events [\#411](https://github.com/adewg/ICAR/issues/411)
+- Fraction property in the icarBreedFractionsType model [\#410](https://github.com/adewg/ICAR/issues/410)
+- service-sires API [\#402](https://github.com/adewg/ICAR/issues/402)
+- Device Attentions message [\#393](https://github.com/adewg/ICAR/issues/393)
+- Define metrics for carcass observations [\#386](https://github.com/adewg/ICAR/issues/386)
+- Group feed utilisation/allowance event [\#382](https://github.com/adewg/ICAR/issues/382)
+- Add Inventory to MedicineRessource?  [\#369](https://github.com/adewg/ICAR/issues/369)
+- Request to make Meta required on IcarEventCoreResource and SourceId on Meta required [\#366](https://github.com/adewg/ICAR/issues/366)
+- Define icarCarcassObservationsEventResource [\#363](https://github.com/adewg/ICAR/issues/363)
+- Define a generalised carcass observation [\#362](https://github.com/adewg/ICAR/issues/362)
+- Define carcass type / resource for carcass data [\#361](https://github.com/adewg/ICAR/issues/361)
+- Define Processing Lot for carcass data [\#360](https://github.com/adewg/ICAR/issues/360)
+- Extensions to Consignment for animals being sent to a processor [\#359](https://github.com/adewg/ICAR/issues/359)
+- "number" or "SetId" added the AnimalSet [\#356](https://github.com/adewg/ICAR/issues/356)
+- Heat recording - standardise vendor-specific fields and make them extensible [\#354](https://github.com/adewg/ICAR/issues/354)
+- Possible agenda for webinar January 2023 [\#343](https://github.com/adewg/ICAR/issues/343)
+- Provide predictions for expected milk yield [\#285](https://github.com/adewg/ICAR/issues/285)
+- Define carcase data feedback event and collection [\#155](https://github.com/adewg/ICAR/issues/155)
+
+**Merged pull requests:**
+
+- Add AU/NZ/UK medicine registers [\#447](https://github.com/adewg/ICAR/pull/447) ([cookeac](https://github.com/cookeac))
+- feat: add rearing, growing & finishing to animal set purposes enum [\#392](https://github.com/adewg/ICAR/pull/392) ([willsimmMOA](https://github.com/willsimmMOA))
+- Add well-known identifier documentation for Australian NLIS ID and PIC [\#388](https://github.com/adewg/ICAR/pull/388) ([cookeac](https://github.com/cookeac))
+- Update icarLocationIdentifierType.md [\#380](https://github.com/adewg/ICAR/pull/380) ([matheuscanalmoa](https://github.com/matheuscanalmoa))
+- Update icarAnimalIdentifierType.md [\#379](https://github.com/adewg/ICAR/pull/379) ([matheuscanalmoa](https://github.com/matheuscanalmoa))
+- Update icarBreedIdentifierType.md [\#378](https://github.com/adewg/ICAR/pull/378) ([matheuscanalmoa](https://github.com/matheuscanalmoa))
+
+## [v1.3.2](https://github.com/adewg/ICAR/tree/v1.3.2) (2023-02-15)
+
+[Full Changelog](https://github.com/adewg/ICAR/compare/v1.3.1...v1.3.2)
 
 **Closed issues:**
 
