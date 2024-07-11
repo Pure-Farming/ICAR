@@ -8,7 +8,7 @@
       "type": "object",
       "required": [
         "animal",
-        "site",
+        "sites",
         "validFrom"
       ],
       "properties": {
