@@ -1,8 +1,6 @@
 {
   "description": "Enumeration for the kind of departure. Type of destination or transfer.",
-
   "type": "string",
-
   "enum": [
     "InternalTransfer",
     "Export",
@@ -10,6 +8,7 @@
     "Newborn",
     "StudService",
     "StudServiceReturn",
+    "AgedOut",
     "Agistment",
     "AgistmentReturn",
     "Show",
