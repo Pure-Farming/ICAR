@@ -1,8 +1,6 @@
 {
   "description": "Enumeration for arrival reason. Not specified in previous ADE data dictionary.",
-
   "type": "string",
-
   "enum": [
     "Purchase",
     "InternalTransfer",
@@ -10,6 +8,7 @@
     "StudService",
     "StudServiceReturn",
     "Slaughter",
+    "AgedIn",
     "Agistment",
     "AgistmentReturn",
     "Show",
